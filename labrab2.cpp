@@ -5,20 +5,15 @@
 using namespace std;
 void one()
 { 
-int row; //ряд
 cout <<"Введите номер, до которого будет строится ряд: ";
-cin >> row;
-for (int i = 0; i<row; i++)
-{ int val =1; // value - значение 
-cout.width(row-i);//позволяет вашим программам указать минимальное количество символов, которые будет использовать следующее выходное значение
-for (int x = 0; x<=i; x++)  
-{
- cout<<val<<" ";
- val= val * (i-x)/(x+1);
-}
-cout<<endl;
-}
-    
+    cout << "row = ";
+    int q, row, j;
+    cin >> row;
+    for (q = 0; q <= row; q++)
+    {
+        for (j = 0; j <= q; j++) cout << j;
+        cout << endl;
+    }
 }
 void two()
 {
